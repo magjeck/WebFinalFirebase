@@ -1,0 +1,49 @@
+.buttonScreen {
+  display: flex;
+  flex: column;
+  justify-content: space-around;
+  align-items: center;
+
+}
+
+.countDisplay {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+.signInButton {
+  text-align: center;
+  padding:10px;
+  border: solid darkgreen 5px;
+}
+
+.signInButton:hover {
+  background-color: gray;
+}
+
+.colorButton {
+  text-align: center;
+  padding: 10px;
+  border: solid aqua 5px;
+}
+
+.colorButton:hover {
+  background-color: gray;
+}
+
+.deleteButton {
+  text-align: center;
+  padding:10px;
+  border: solid darkred 5px;
+}
+
+.deleteButton:is(:active,:hover) {
+  background-color: red;
+}
